@@ -27,7 +27,7 @@ export default hopeTheme({
 
   // 博客相关
   blog: {
-    description: "",
+    description: "Be quick.",
     
   },
 
