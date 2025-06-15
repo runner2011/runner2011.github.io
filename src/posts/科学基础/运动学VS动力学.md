@@ -1,3 +1,9 @@
+---
+tag:
+  - AI_GEN
+date: 2025-06-15
+---
+# 运动学VS动力学
 Q:什么是Kinematics？为什么FK/IK control rig 是Kinematics(运动学）
 
 ***
