@@ -28,6 +28,7 @@ tag:
 // code sample
 print(hello)
 print(hello)
+```
 
 我们把上面的函数写作
 $$
