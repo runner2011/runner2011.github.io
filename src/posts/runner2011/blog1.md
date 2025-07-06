@@ -29,6 +29,12 @@ tag:
 print(hello)
 print(hello)
 
+我们把上面的函数写作
+$$
+Z=kx+b
+$$
+这是行内公式：$E = mc^2$。
+
 
 
 
