@@ -1,14 +1,10 @@
-
 name: 部署文档
-
 on:
   push:
     branches:
       - main
-
 permissions:
   contents: write
-
 jobs:
   deploy-gh-pages:
     runs-on: ubuntu-latest
@@ -19,32 +15,24 @@ jobs:
           fetch-depth: 0
           # 如果你文档需要 Git 子模块，取消注释下一行
           # submodules: true
-
-
-
+          
       - name: 设置 Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: pnpm
           
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10  # 或你的实际 pnpm 版本
-
-      - name: 安装依赖
+      - name: 启用 corepack 和安装依赖
         run: |
           corepack enable
-          run: pnpm install
-
+          pnpm install
+        
       - name: 构建文档
         env:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           pnpm run docs:build
           > src/.vuepress/dist/.nojekyll
-
+          
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
         with:
