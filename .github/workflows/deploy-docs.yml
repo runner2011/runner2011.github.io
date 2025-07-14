@@ -28,10 +28,10 @@ jobs:
           node-version: 22
           cache: pnpm
           
-      - name: Enable corepack and install pnpm
-        run: |
-          corepack enable
-          corepack prepare pnpm@9 --activate
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10  # 或你的实际 pnpm 版本
 
       - name: 安装依赖
         run: |
