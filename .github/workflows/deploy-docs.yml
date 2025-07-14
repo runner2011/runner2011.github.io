@@ -27,11 +27,16 @@ jobs:
         with:
           node-version: 22
           cache: pnpm
+          
+      - name: Enable corepack and install pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@9 --activate
 
       - name: 安装依赖
         run: |
           corepack enable
-          pnpm ci
+          run: pnpm install
 
       - name: 构建文档
         env:
