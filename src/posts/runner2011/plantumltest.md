@@ -5,9 +5,6 @@ tag:
 ---
 # plantumltest
 
-
-
-
 @startmindmap
 * 计算机科学体系
 ** 1. 理论基础
