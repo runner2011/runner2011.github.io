@@ -7,6 +7,12 @@ tag:
 
 # 关于CMake的一些问题
 
+## CMake和GNU make, ninja可以结合使用，和这些构建程序的区别是什么
+### 分别做了什么事
+Runner2011:
+首先，他们都是项目构建工具，构建好项目后，编译阶段需要调编译器(g++, clang, MSVC等等)生成可执行文件。
+CMake主要为解决跨平台构建问题，更在make, ninja上一层。编写跨平台CMake文件，通过指定具体构建程序（eg. make, ninja等等)，让他们**处理对应平台问题**，生成给编译器需要的编译单元，头文件等等信息。
+
 ## target_include_directories(MyApp PRIVATE ${CMAKE_SOURCE_DIR}/src/header)中PRIVATE什么意思
 
 目标对头文件的可见性。PRIVATE只给当前目标用，PUBLIC也给其他引用当前的目标或库用。
