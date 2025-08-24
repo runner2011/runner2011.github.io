@@ -3,8 +3,8 @@ home: true
 layout: Blog
 #icon: house
 title: 博客主页
-heroImage: /assets/images/logo.svg
-heroText: Runner2011's Blog
+#heroImage: /assets/images/logo.svg
+heroText: RUNNER2011's BLOG
 heroFullScreen: true
 tagline: 
 projects:

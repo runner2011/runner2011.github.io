@@ -11,7 +11,7 @@ export default hopeTheme({
     url: "https://runner2011.github.io",
   },
 
-  logo: "/.vuepress/public/logo.svg",
+  logo: "/Avatar.png",
 
   docsDir: "src",
 
