@@ -22,13 +22,12 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: "chenjfsea@gmail.com",
   displayFooter: true,
 
   // 博客相关
   blog: {
     description: "Be quick.",
-    
   },
 
   // 多语言配置
