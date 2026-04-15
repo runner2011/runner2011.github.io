@@ -2,6 +2,8 @@
 date: 2026-04-14
 tag:
   - AI_GEN
+article: false
+index: false
 ---
 
 # Motion Capture
